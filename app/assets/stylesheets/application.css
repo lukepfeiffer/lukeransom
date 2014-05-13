@@ -1,35 +1,39 @@
 body{
-	background-color: #ccc
+  background: url('/assets/gray_stripe.jpg');
+  margin: 0;
 }
 
 .main{
- font-family: arial;
- border: 1px solid black;
- border-radius: 8px;
- width: 470px;
- height: 170px;
- text-align: center;
+  font-family: arial;
+  border: 1px solid black;
+  width: 567px;
+  height: 170px;
+  text-align: center;
+  color: #ccc;
+  background: url('/assets/space.jpg') ;
 }
 
 h1{
   font-size: 50px;
-	font-weight: normal;
+  font-weight: normal;
 }
 
 h2{
-	font-family: arial;
-	font-weight: normal;
-	font-size: 30px;
-	margin: 0;
+  font-family: arial;
+  font-weight: normal;
+  font-size: 30px;
+  margin: 0;
 }
 
 a{
-	font-family: arial;
+  font-family: arial;
   font-size: 30px;
-	padding: 7px;
-	text-decoration: none;
-	background-color: #ebebeb;
-	border: 1px solid gray;
+  padding: 7px;
+  text-decoration: none;
+  background-color: #b5b5b5;
+  border: 1px solid #b6b6bf;
+  border-radius: 2px;
+  color: #000;
 }
 
 ul{
@@ -37,7 +41,19 @@ ul{
 }
 
 p{
-	font-size: 30px;
-	margin: 0;
+  font-size: 30px;
+  margin: 0;
+}
 
+.page_content{
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
+  width: 568px;
+  font-family: arial;
+}
+
+.page_description{
+  margin: 3px;
+  font-size: 17px;
+  font-family: arial;
 }
