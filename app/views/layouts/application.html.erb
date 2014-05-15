@@ -6,6 +6,7 @@
   <%# <%= javascript_include_tag "application", "data-turbolinks-track" => true %1> %>
   <%= csrf_meta_tags %>
   <div class= main>
+    <%= link_to 'Sign In*', sign_in_path, class: 'sign_in' %>
   <h1> Luke Pfeiffer </h1>
    <%= link_to 'Home', root_path %>
    <%= link_to 'About Me', about_me_path %>
@@ -17,3 +18,4 @@
 
 </body>
 </html>
+<foot> *'Signing in is for me' -Luke </foot>

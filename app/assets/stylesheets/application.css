@@ -45,6 +45,10 @@ p{
   margin: 0;
 }
 
+foot{
+  font-size: 15px;
+}
+
 .page_content{
   border: 1px solid #b5b5b5;
   border-radius: 4px;
@@ -56,4 +60,35 @@ p{
   margin: 3px;
   font-size: 17px;
   font-family: arial;
+}
+
+.sign_in{
+  background-color: #1c4743;
+  border: 1px solid #205152;
+  color: #fff;
+  font-size: 14px;
+  padding: 2px;
+  border-radius: 3px;
+  float: right;
+}
+
+.signing_in{
+  font-size: 25px;
+  text-decoration: underline;
+  margin: 0 0 0 3px;
+}
+
+.field{
+  display: list-item;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 0 0  0 5px;
+}
+
+.submit{
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: #98aaf5;
+  border: 1px solid #8c88f7;
+  color: #fff;
 }
