@@ -1,3 +1,10 @@
 %div.page_content
-  -# - if signed_in?
-  -#   = link_to 'Edit', edit_about_me_path, class: 'edit'
+  %h2
+    About Me
+    %ul.page_description My name is Luke Pfeiffer and I enjoy the pass time of skateboarding and casual gaming. I am trying to take software engineering to a more expert level. Check out the projects page to see some of my early works!
+  %p
+    Contact Me
+    %div.contact_info
+      %p#email Email: 'pthelukenator@gmail.com'
+      = link_to 'Youtube', "https://www.youtube.com/user/TownNotNice", class: 'contacts'
+      = link_to 'GitHub', "https://github.com/lukepfeiffer", class: 'contacts'
