@@ -10,10 +10,15 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(project_params)
     if @project.save
-      redirect_to project_path
+      redirect_to projects_path
     else
       redirect_to new_project_path
     end
+  end
+
+  def destroy
+    Project.find_by(params[:id]).destroy
+    redirect_to projects_path
   end
 
   def project_params

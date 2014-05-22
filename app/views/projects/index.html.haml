@@ -1,14 +1,17 @@
 %div.page_content
   %h2
-    %ul
+    %ul.project_ul
       - @projects.each do |project|
-        %li
-          %div
-            = project.title
-          %div
+        %ul.project_li
+          %div.project_title
+            = project.project_title
+          %div.project_description
             = project.description
-          %div
-            = project.github_url
-          %div
-            = project.project_url
-    = link_to 'New Project', new_project_path, class: 'project_link'
+          %div.url
+            = link_to project.github_url, project.github_url, class: 'url_link'
+          %div.url
+            = link_to project.project_url, project.project_url, class: 'url_link'
+          - if current_user.present?
+            = link_to 'Delete Project?', project_path(project), method: :delete, class: 'delete'
+    - if current_user.present?
+      = link_to 'New Project', new_project_path, class: 'project_link'

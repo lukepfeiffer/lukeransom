@@ -5,15 +5,19 @@
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <div class= main>
+  <div class= 'main'>
     <% if signed_in? %>
-      <span class= 'username'> <%= current_user.username %> </span>
+      <div class= 'username_div'>
+        <span class= 'username'> 
+          <%= current_user.username %> 
+          <%= link_to 'Sign Out', sign_out_path, method: :delete, class: 'sign_out' %>
+        </span>
+      </div>
     <% else %>
       <%= link_to 'Sign In*', sign_in_path, class: 'sign_in' %>
     <% end %>
   <h1> Luke Pfeiffer </h1>
-   <%= link_to 'Home', root_path %>
-   <%= link_to 'About Me', about_me_path %>
+   <%= link_to 'About Me', root_path %>
    <%= link_to 'Projects', projects_path %>
   </div>
 </head>
