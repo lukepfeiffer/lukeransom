@@ -2,11 +2,15 @@
 <html>
 <head>
   <title>LukeRansom</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%# <%= javascript_include_tag "application", "data-turbolinks-track" => true %1> %>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <div class= main>
-    <%= link_to 'Sign In*', sign_in_path, class: 'sign_in' %>
+    <% if signed_in? %>
+      <span class= 'username'> <%= current_user.username %> </span>
+    <% else %>
+      <%= link_to 'Sign In*', sign_in_path, class: 'sign_in' %>
+    <% end %>
   <h1> Luke Pfeiffer </h1>
    <%= link_to 'Home', root_path %>
    <%= link_to 'About Me', about_me_path %>

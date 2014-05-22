@@ -17,7 +17,7 @@ h2{
 
 a{
   font-family: arial;
-  font-size: 30px;
+  font-size: 25px;
   padding: 7px;
   text-decoration: none;
   background-color: #b5b5b5;
@@ -47,6 +47,10 @@ foot{
   text-align: center;
   color: #ccc;
   background: url('/assets/space.jpg') ;
+}
+
+.username{
+  float: right;
 }
 
 .page_content{
@@ -94,7 +98,7 @@ foot{
 }
 
 .contact_info{
-  margin: 0 0 0 5px; 
+  margin: 0 0 0 5px;
 }
 
 .contacts{
@@ -108,6 +112,14 @@ foot{
   padding: 0;
   width: 100px;
   color: #182121;
+}
+
+.project_link{
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-size: 17px;
+  padding: 4px;
+  float: right;
 }
 
 #email{

@@ -1,0 +1,14 @@
+%div.page_content
+  %h2
+    %ul
+      - @projects.each do |project|
+        %li
+          %div
+            = project.title
+          %div
+            = project.description
+          %div
+            = project.github_url
+          %div
+            = project.project_url
+    = link_to 'New Project', new_project_path, class: 'project_link'
