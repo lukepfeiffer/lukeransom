@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140522014459) do
+ActiveRecord::Schema.define(version: 20140523192829) do
 
   create_table "projects", force: true do |t|
     t.string "username"
@@ -29,6 +29,14 @@ ActiveRecord::Schema.define(version: 20140522014459) do
     t.string   "remember_token"
     t.string   "reset_password_token"
     t.string   "session_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "videos", force: true do |t|
+    t.string   "caption"
+    t.string   "url"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
