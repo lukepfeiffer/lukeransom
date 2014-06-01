@@ -13,5 +13,6 @@
             = link_to project.project_url, project.project_url, class: 'url_link'
           - if current_user.present?
             = link_to 'Delete Project?', project_path(project), method: :delete, class: 'delete'
+            = link_to 'Edit Project', edit_project_path(project), class: 'edit'
     - if current_user.present?
       = link_to 'New Project', new_project_path, class: 'project_link'
