@@ -16,14 +16,11 @@ h2{
 }
 
 a{
-  font-family: arial;
-  font-size: 25px;
-  padding: 7px;
-  text-decoration: none;
-  background-color: #b5b5b5;
-  border: 1px solid #b6b6bf;
-  border-radius: 2px;
-  color: #000;
+  color: #3a21ed;
+}
+
+a:hover{
+  font-weight: bold
 }
 
 ul{
@@ -187,6 +184,51 @@ foot{
   background-color: #961212;
   font-size: 15px;
   padding: 2px;
+}
+
+.previous_page{
+  text-decoration: underline;
+  background-color: #96a7b3;
+  font-size: 14px;
+  color: #3a21ed;
+  border: none;
+  padding: 3px;
+}
+
+.previous_page:hover{
+  font-weight: bold;
+}
+
+.next_page{
+  text-decoration: underline;
+  background-color: #96a7b3;
+  font-size: 14px;
+  color: #3a21ed;
+  border: none;
+  padding: 3px;
+}
+
+.disabled{
+  color: black;
+}
+
+.disabled:hover{
+  font-weight: normal;
+}
+
+.next_page:hover{
+  font-weight: bold;
+}
+
+.layout_link{
+  font-family: arial;
+  font-size: 25px;
+  padding: 7px;
+  text-decoration: none;
+  background-color: #b5b5b5;
+  border: 1px solid #b6b6bf;
+  border-radius: 2px;
+  color: #000;
 }
 
 #email{
