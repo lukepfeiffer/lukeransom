@@ -9,7 +9,6 @@
     <% if signed_in? %>
       <div class= 'username_div'>
         <span class= 'username'> 
-          <%= current_user.username %> 
           <%= link_to 'Sign Out', sign_out_path, method: :delete, class: 'sign_out' %>
         </span>
       </div>
